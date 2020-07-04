@@ -236,6 +236,7 @@ form{
   display: block;
   border: 0 none;
   margin: 1em auto;
+  -webkit-appearance: none;
 }
 .purchase-grp img {
   width:100%;
