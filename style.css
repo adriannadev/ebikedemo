@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Campton";
+  src: url("fonts/Rene.Bieder_Campton.Medium.otf");
+}
+@font-face {
+  font-family: "Campton";
+  src: url("fonts/Campton-Bold.otf");
+  font-weight: bold;
+}
+
+body {
+    font-family: Campton, Helvetica, sans-serif;
+    margin: 0px;
+}
+h1 {
+    font-size: 3em;
+}
+p {
+    font-size: 1.3em;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #ededed;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    max-width: 134px;
+    height: 50px;
+    left: 50%;
+    margin-left: -67px;
+}
+.main {
+    margin: 2.5em 0 0;
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+     rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(img/top.jpg);
+    color: white;
+    text-align: center;
+    padding: 1em 0 1.2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-title {
+  margin-top: 2em;
+}
+.main-btn {
+  margin: 0 0 3em;
+}
+
+@media (max-width: 800px) {
+    .main .info {
+      width: 80%;
+    }
+}
+  .btn {
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    background-color:yellow;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  .learnmore {
+    padding: 1em 6em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .info {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.info p {
+  text-align: center;
+}
+
+.info .btn {
+  margin-top: 2em;
+}
+.gif {
+  margin: 2em 2em;
+  width: 50%;
+}
+.gif img {
+  width: 100%;
+}
+.info li {
+    list-style: none;
+    font-size: 1.5em;
+}
+
+  @media (max-width: 800px) {
+    .learnmore{
+      width: 90%;
+      padding: 1.5em;
+    }
+    .info {
+      width: 100%;
+    }
+    .gif{
+      width: 100%;
+    }
+  }
+  .iframe-container{
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+  }
+  @media (min-width: 800px){
+    .main, .learnmore {
+      height: 90vh;
+    }
+  }
+
+  form {
+    overflow: hidden;
+  }
