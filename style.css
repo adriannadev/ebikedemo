@@ -30,13 +30,13 @@ p {
   z-index: 100;
 }
 
-/* .logo {
+.logo {
   position: relative;
-  max-width: 134px;
+  width: 134px;
   height: 50px;
   left: 50%;
   margin-left: -67px;
-} */
+}
 .main {
   margin: 2.5em 0 0;
   width: 100%;
@@ -67,6 +67,9 @@ p {
   .main .title, 
   .main .description {
     width: 70%;
+  }
+  .logo {
+    width: 30vw;
   }
 }
 .btn {
