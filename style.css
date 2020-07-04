@@ -12,7 +12,7 @@ body {
   font-family: Campton, Helvetica, sans-serif;
   color: #161a39;
   margin: 0px;
-  width: 100%;
+  width: 100vw;
 }
 h1 {
   font-size: 3em;
@@ -217,7 +217,7 @@ input {
 .icon-relative .fas,
 .icon-relative .far {
   position: absolute;
-  bottom: .3em;
+  bottom: .4em;
   left: .6em;
   font-size: 1.2em;
   color: #555555;
@@ -231,7 +231,7 @@ input {
 .btn-pay {
   width: 100%;
   display: block;
-  border: none;
+  border: 0 none;
   margin: 1em auto;
 }
 .purchase-grp img {
