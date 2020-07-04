@@ -125,8 +125,8 @@ p {
 
 @media (max-width: 800px) {
   .learnmore {
-    width: 90%;
-    padding: 1.5em;
+    width: 80%;
+    padding: 1em;
   }
   .info {
     width: 100%;
