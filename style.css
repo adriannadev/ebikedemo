@@ -71,6 +71,9 @@ p {
   .logo {
     width: 30vw;
   }
+  h1 {
+    font-size: 2em;
+  }
 }
 .btn {
   display: inline-block;
@@ -125,8 +128,7 @@ p {
 
 @media (max-width: 800px) {
   .learnmore {
-    width: 80%;
-    padding: 1em;
+    padding: 1.5em;
   }
   .info {
     width: 100%;
