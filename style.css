@@ -1,3 +1,5 @@
+/* Import fonts */
+
 @font-face {
   font-family: "Campton";
   src: url("fonts/Rene.Bieder_Campton.Medium.otf");
@@ -7,6 +9,8 @@
   src: url("fonts/Campton-Bold.otf");
   font-weight: bold;
 }
+
+/* General style */
 
 body {
   font-family: Campton, Helvetica, sans-serif;
@@ -20,6 +24,9 @@ h1 {
 p {
   font-size: 1.3em;
 }
+
+/* Navbar */
+
 .navbar {
   overflow: hidden;
   background-color: #ededed;
@@ -30,6 +37,8 @@ p {
   z-index: 100;
 }
 
+/* Logo on navbar */
+
 .logo {
   position: relative;
   width: 134px;
@@ -37,6 +46,9 @@ p {
   left: 50%;
   margin-left: -67px;
 }
+
+/* Main top section */
+
 .main {
   margin: 2.5em 0 0;
   width: 100%;
@@ -64,12 +76,9 @@ p {
 }
 
 @media (max-width: 800px) {
-  .main .title, 
+  .main .title,
   .main .description {
     width: 60%;
-  }
-  .logo {
-    width: 30vw;
   }
   h1 {
     font-size: 2em;
@@ -90,6 +99,9 @@ p {
 .btn:hover {
   transform: scale(1.1);
 }
+
+/* Info section */
+
 .learnmore {
   padding: 1em 6em;
   display: flex;
@@ -123,26 +135,16 @@ p {
   font-size: 1.5em;
 }
 
-@media (max-width: 800px) {
-  .learnmore {
-    padding: 1.5em;
-  }
-  .info {
-    width: 100%;
-  }
-  .gif {
-    width: 100%;
-  }
-  .buy {
-    width: 90%;
-  }
-}
+/* Video section */
+
 .iframe-container {
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
+  position: relative;
 }
 .iframe-container iframe {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -154,10 +156,13 @@ p {
   .buy {
     height: 90vh;
   }
-  .iframe-container{
+  .iframe-container {
     padding-bottom: 48%;
   }
 }
+
+/* Payment section */
+
 .buy {
   width: 60%;
   margin: 2em auto 0;
@@ -167,7 +172,7 @@ p {
   text-align: center;
 }
 
-form{
+form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -175,32 +180,31 @@ form{
   align-items: center;
 }
 
-.purchase-grp{
+.purchase-grp {
   width: 40%;
   margin: 2em;
-
 }
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .buy {
     width: 90%;
     padding: 3em 1em 0;
   }
-  .purchase-grp{
-    width:80%;
+  .purchase-grp {
+    width: 80%;
     margin: 0;
   }
 }
 .input {
-  padding: .3em .2em .3em 2em;
+  padding: 0.3em 0.2em 0.3em 2.5em;
   width: 100%;
-  text-align: center;
+  text-align: left;
   border: 2px solid #dddddd;
   border-radius: 5px;
   outline: none;
   font-size: 1em;
   color: #555555;
-  box-sizing:border-box;
-  margin-top: .5em;
+  box-sizing: border-box;
+  margin-top: 0.5em;
 }
 
 .card-grp {
@@ -221,18 +225,17 @@ form{
 .icon-relative .fas,
 .icon-relative .far {
   position: absolute;
-  bottom: .4em;
-  left: .6em;
+  bottom: 0.4em;
+  left: 0.6em;
   font-size: 1.2em;
   color: #555555;
 }
 .purchase-grp .fa {
   font-size: 2em;
-  margin-right: .4em;
-  margin-bottom: .7em;
-
+  margin-right: 0.4em;
+  margin-bottom: 0.7em;
 }
- .btn-pay {
+.btn-pay {
   width: 100%;
   display: block;
   border: 0 none;
@@ -240,21 +243,98 @@ form{
   -webkit-appearance: none;
 }
 .purchase-grp img {
-  width:100%;
+  width: 100%;
 }
 .buy p {
   font-size: 1.2em;
 }
 
-@media(min-width:800px){
+/* Mobile view for sections */
+
+@media (max-width: 800px) {
+  .learnmore {
+    padding: 1.5em;
+  }
+  .info {
+    width: 100%;
+  }
+  .gif {
+    width: 100%;
+  }
+  .buy {
+    width: 90%;
+  }
+}
+
+/* Snap to page scroll on web browser */
+
+@media (min-width: 800px) {
   .scroller {
     scroll-padding: 50px;
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
   }
-  
+
   .scroller section {
     scroll-snap-align: start;
+  }
+}
+
+/* Order confirmation page */
+
+.container {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.confirm-title {
+  text-align: left;
+  width: 40%;
+}
+.confirm-title h1 {
+  margin: 0;
+}
+
+.confirm-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around;
+  margin-top: 7%;
+}
+
+.confirm-item {
+  width: 40%;
+  text-align: center;
+}
+
+.confirm-item h2 {
+  margin: 0.3em auto;
+  background-color: #febd35;
+  width: 80%;
+  padding: 0.2em;
+}
+.confirm-item img {
+  width: 60%;
+}
+.promo {
+  width: 50%;
+  padding: 5vh 10vw;
+  text-align: center;
+  margin: 1em auto;
+}
+
+/* Mobile view for confirmation page */
+
+@media (max-width: 800px) {
+  .confirm-title,
+  .confirm-item,
+  .promo {
+    width: 80%;
   }
 }
